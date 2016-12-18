@@ -9,7 +9,7 @@ class MainMenu extends Component {
       {name: 'Parylene', subMenus: [{name: 'Parylene Concept'}, {name: 'Parylene Merit'}, {name: 'Parylene Gear'}]}
     ]
     return (
-      <div>
+      <div clasName="navbar">
       {menuItems.map(function(menuItem, i){
         if (menuItem.subMenus != undefined){
           return (
@@ -24,7 +24,7 @@ class MainMenu extends Component {
             <ul key={i}>{menuItem.name}</ul>
           )
         }
-      })};
+      })}
     </div>
     );
   }
